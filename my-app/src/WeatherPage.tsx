@@ -23,16 +23,14 @@ const WeatherPage: React.FC = () => {
             alert("Please enter the city");
             return;
         }
-        if (city !== weatherData?.name) {
-            alert("Please enter valid city name!");
-            return;
-        }
+
         const apiKey: string = '210bfc73cf2569847aed82d7dea149c4';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
         try {
             const response = await fetch(url);
             if (!response.ok) {
+                alert("Please Enter Valid City Name")
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data: WeatherData = await response.json();
