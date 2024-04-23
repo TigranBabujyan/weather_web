@@ -1,0 +1,80 @@
+.Body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: url("../public/4156249.jpg") fixed no-repeat center;
+ }
+
+
+.Title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #D7DAE5;
+    background-color: #084C61;
+    opacity: 70%;
+}
+
+.Main {
+    position: relative;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 92.1vh;
+    justify-content: center;
+}
+
+.Input {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Search_position {
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 7rem;
+    background-color: #084C61;
+    opacity: 70%;
+}
+
+@media only screen and (max-width: 950px) {
+    .Search_position {
+        width: 100%
+    }
+    .Input {
+        width: unset;
+    }
+}
+
+.Search {
+    padding: 10px;
+    display: flex;
+    border: 0;
+    outline: none;
+}
+
+input:focus  {
+ border: 0;
+}
+
+.Button {
+    background: linear-gradient(153deg, #D7DAE5 34%, #9AC4F8 53%, rgba(0,198,255,0) 100%);
+    color: #084C61;
+    border-radius: 0 0.5rem 0 0.5rem;
+    border: 0;
+    width: 50px;
+    height: 30px;
+    margin: 30px auto 0;
+}
+
+Button:hover {
+    background: linear-gradient(153deg, rgba(236,200,0,1) 53%, rgba(182,152,16,1) 82%, rgba(0,198,255,0) 100%);
+}
+
