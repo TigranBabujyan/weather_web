@@ -39,9 +39,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 70%;
-    height: 7rem;
-    background-color: #084C61;
+    background-color: #C65BCF;
     opacity: 70%;
+}
+
+p {
+}
+
+.data_wrap {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    background-color: #084C61;
+    border-radius: 2rem;
 }
 
 @media only screen and (max-width: 950px) {
@@ -60,18 +71,26 @@
     outline: none;
 }
 
+.data_wrap {
+    font-size: 2rem;
+}
+
 input:focus  {
  border: 0;
 }
 
+.hidden {
+    display: none
+}
+
 .Button {
-    background: linear-gradient(153deg, #D7DAE5 34%, #9AC4F8 53%, rgba(0,198,255,0) 100%);
-    color: #084C61;
+    background: linear-gradient(120deg, #084C61 34%, #9AC4F8 53%, #084C61 80%, rgba(0,198,255,0) 100%);
+    color: white;
+    font-weight: bold;
     border-radius: 0 0.5rem 0 0.5rem;
     border: 0;
-    width: 50px;
-    height: 30px;
     margin: 30px auto 0;
+    padding: 10px;
 }
 
 Button:hover {
