@@ -43,9 +43,6 @@
     opacity: 70%;
 }
 
-p {
-}
-
 .data_wrap {
     font-size: 3rem;
     font-weight: bold;
@@ -53,6 +50,24 @@ p {
     margin-top: 1rem;
     background-color: #084C61;
     border-radius: 2rem;
+}
+
+.toggle_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.week_forecast{
+
+}
+
+.toggle_title {
+    font-weight: bold;
+    color: white;
 }
 
 @media only screen and (max-width: 950px) {
@@ -69,6 +84,7 @@ p {
     display: flex;
     border: 0;
     outline: none;
+    border-radius: 2rem;
 }
 
 .data_wrap {
